@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Crumpled notes in the wastebasket</title>
-    <link>http://patpadgett.com/posts/</link>
+    <link>http://blog.patpadgett.com/posts/</link>
     <description>Recent content in Posts on Crumpled notes in the wastebasket</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 23 Oct 2018 11:39:30 -0400</lastBuildDate>
     
-	<atom:link href="http://patpadgett.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.patpadgett.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Awesome Setup</title>
-      <link>http://patpadgett.com/posts/awesome-setup/</link>
+      <link>http://blog.patpadgett.com/posts/awesome-setup/</link>
       <pubDate>Tue, 23 Oct 2018 11:39:30 -0400</pubDate>
       
-      <guid>http://patpadgett.com/posts/awesome-setup/</guid>
+      <guid>http://blog.patpadgett.com/posts/awesome-setup/</guid>
       <description>I use these tools and related themes/plugins on my workstations.
  i3 window manager stormssh ssh config manager tmux with tpm plugin manager, maglev theme, and tmuxinator for managing sessions zsh with oh-my-zsh, bullet-train theme, and various plugins (git) vim with vundle package manager, and various packages like vim-airline and powerline (see below) powerline with powerline-patched Inconsolata font  I&amp;rsquo;ll publish my dotfiles soon.</description>
     </item>
