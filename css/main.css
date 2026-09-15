@@ -3816,18 +3816,18 @@ body {
 .header-title {
   text-align: center;
   margin: 30px 0 0; }
-  .header-title h1 {
+  .header-title h1, .header-title .site-title {
     margin: 10px 20px;
     font-weight: 700;
     font-size: 32px;
     font-size: 2rem;
     color: rgba(85, 85, 85, 0.8); }
     @media only screen and (min-width: 48em) {
-      .header-title h1 {
+      .header-title h1, .header-title .site-title {
         font-size: 48px;
         font-size: 3rem; } }
     @media only screen and (min-width: 62.5em) {
-      .header-title h1 {
+      .header-title h1, .header-title .site-title {
         font-size: 60px;
         font-size: 3.75rem; } }
   .header-title h2 {
@@ -3856,7 +3856,7 @@ body {
     vertical-align: middle;
     margin: 0 auto;
     text-align: center; }
-  .feature .header-title h1 {
+  .feature .header-title h1, .header-title .site-title {
     margin: 10px;
     font-weight: 700;
     margin: 10px 60px;
