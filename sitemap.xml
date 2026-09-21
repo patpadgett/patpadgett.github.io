@@ -1,25 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://blog.patpadgett.com/about/</loc>
-    <lastmod>2018-10-23T11:51:16-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.patpadgett.com/posts/awesome-setup/</loc>
-    <lastmod>2018-10-23T11:39:30-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.patpadgett.com/</loc>
-    <lastmod>2018-10-23T11:39:30-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.patpadgett.com/posts/</loc>
-    <lastmod>2018-10-23T11:39:30-04:00</lastmod>
-  </url>
-  
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://blog.patpadgett.com/</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://blog.patpadgett.com/start-here/</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://blog.patpadgett.com/about/</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://blog.patpadgett.com/tags/</loc><lastmod>2026-09-21</lastmod></url>
+<url><loc>https://blog.patpadgett.com/posts/corkscrew-twenty-five-years/</loc><lastmod>2026-09-21</lastmod></url>
 </urlset>

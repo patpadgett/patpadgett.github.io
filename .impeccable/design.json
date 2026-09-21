@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-20T15:50:09.269237+00:00",
+  "title": "Design System: blog.patpadgett.com",
+  "extensions": {
+    "colorMeta": {
+      "toner": {
+        "role": "neutral",
+        "displayName": "Toner",
+        "canonical": "#111111",
+        "tonalRamp": [
+          "oklch(15.000% 0.000000 89.876)",
+          "oklch(26.429% 0.000000 89.876)",
+          "oklch(37.857% 0.000000 89.876)",
+          "oklch(49.286% 0.000000 89.876)",
+          "oklch(60.714% 0.000000 89.876)",
+          "oklch(72.143% 0.000000 89.876)",
+          "oklch(83.571% 0.000000 89.876)",
+          "oklch(95.000% 0.000000 89.876)"
+        ]
+      },
+      "goldenrod": {
+        "role": "primary",
+        "displayName": "Goldenrod",
+        "canonical": "#f0c419",
+        "tonalRamp": [
+          "oklch(15.000% 0.166802 91.914)",
+          "oklch(26.429% 0.166802 91.914)",
+          "oklch(37.857% 0.166802 91.914)",
+          "oklch(49.286% 0.166802 91.914)",
+          "oklch(60.714% 0.166802 91.914)",
+          "oklch(72.143% 0.166802 91.914)",
+          "oklch(83.571% 0.166802 91.914)",
+          "oklch(95.000% 0.166802 91.914)"
+        ]
+      },
+      "pink": {
+        "role": "secondary",
+        "displayName": "Pink",
+        "canonical": "#ff6fa8",
+        "tonalRamp": [
+          "oklch(15.000% 0.183503 357.858)",
+          "oklch(26.429% 0.183503 357.858)",
+          "oklch(37.857% 0.183503 357.858)",
+          "oklch(49.286% 0.183503 357.858)",
+          "oklch(60.714% 0.183503 357.858)",
+          "oklch(72.143% 0.183503 357.858)",
+          "oklch(83.571% 0.183503 357.858)",
+          "oklch(95.000% 0.183503 357.858)"
+        ]
+      },
+      "blue": {
+        "role": "secondary",
+        "displayName": "Blue",
+        "canonical": "#4a90d9",
+        "tonalRamp": [
+          "oklch(15.000% 0.130949 251.419)",
+          "oklch(26.429% 0.130949 251.419)",
+          "oklch(37.857% 0.130949 251.419)",
+          "oklch(49.286% 0.130949 251.419)",
+          "oklch(60.714% 0.130949 251.419)",
+          "oklch(72.143% 0.130949 251.419)",
+          "oklch(83.571% 0.130949 251.419)",
+          "oklch(95.000% 0.130949 251.419)"
+        ]
+      },
+      "green": {
+        "role": "tertiary",
+        "displayName": "Green",
+        "canonical": "#79c65a",
+        "tonalRamp": [
+          "oklch(15.000% 0.162393 137.567)",
+          "oklch(26.429% 0.162393 137.567)",
+          "oklch(37.857% 0.162393 137.567)",
+          "oklch(49.286% 0.162393 137.567)",
+          "oklch(60.714% 0.162393 137.567)",
+          "oklch(72.143% 0.162393 137.567)",
+          "oklch(83.571% 0.162393 137.567)",
+          "oklch(95.000% 0.162393 137.567)"
+        ]
+      },
+      "orange": {
+        "role": "tertiary",
+        "displayName": "Orange",
+        "canonical": "#ff8a3d",
+        "tonalRamp": [
+          "oklch(15.000% 0.166798 50.536)",
+          "oklch(26.429% 0.166798 50.536)",
+          "oklch(37.857% 0.166798 50.536)",
+          "oklch(49.286% 0.166798 50.536)",
+          "oklch(60.714% 0.166798 50.536)",
+          "oklch(72.143% 0.166798 50.536)",
+          "oklch(83.571% 0.166798 50.536)",
+          "oklch(95.000% 0.166798 50.536)"
+        ]
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Sheet",
+        "canonical": "#f4f1ea",
+        "tonalRamp": [
+          "oklch(15.000% 0.009845 87.471)",
+          "oklch(26.429% 0.009845 87.471)",
+          "oklch(37.857% 0.009845 87.471)",
+          "oklch(49.286% 0.009845 87.471)",
+          "oklch(60.714% 0.009845 87.471)",
+          "oklch(72.143% 0.009845 87.471)",
+          "oklch(83.571% 0.009845 87.471)",
+          "oklch(95.000% 0.009845 87.471)"
+        ]
+      },
+      "pole": {
+        "role": "neutral",
+        "displayName": "Pole",
+        "canonical": "#3a2f27",
+        "tonalRamp": [
+          "oklch(15.000% 0.021215 57.897)",
+          "oklch(26.429% 0.021215 57.897)",
+          "oklch(37.857% 0.021215 57.897)",
+          "oklch(49.286% 0.021215 57.897)",
+          "oklch(60.714% 0.021215 57.897)",
+          "oklch(72.143% 0.021215 57.897)",
+          "oklch(83.571% 0.021215 57.897)",
+          "oklch(95.000% 0.021215 57.897)"
+        ]
+      },
+      "tape": {
+        "role": "neutral",
+        "displayName": "Tape",
+        "canonical": "rgba(236,222,170,.86)",
+        "tonalRamp": [
+          "oklch(15.000% 0.069139 94.807 / .86)",
+          "oklch(26.429% 0.069139 94.807 / .86)",
+          "oklch(37.857% 0.069139 94.807 / .86)",
+          "oklch(49.286% 0.069139 94.807 / .86)",
+          "oklch(60.714% 0.069139 94.807 / .86)",
+          "oklch(72.143% 0.069139 94.807 / .86)",
+          "oklch(83.571% 0.069139 94.807 / .86)",
+          "oklch(95.000% 0.069139 94.807 / .86)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Lead flyer headings only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Ordinary flyer headings."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Straight article prose, capped at 68ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Date, number, word count and reading time."
+      },
+      "proof": {
+        "displayName": "Proof",
+        "purpose": "Supporting text below flyer headings."
+      },
+      "nav": {
+        "displayName": "Nav",
+        "purpose": "Tape navigation and pagination."
+      },
+      "marker": {
+        "displayName": "Marker",
+        "purpose": "Handwritten annotations."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Article section h2 headings."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "paper-ease",
+        "value": "cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Cast transform and flyer transition group."
+      },
+      {
+        "name": "hover-lift",
+        "value": "transform .22s cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Rotate to 0deg and translateY(-4px) on hover or focus."
+      },
+      {
+        "name": "tear-off",
+        "value": ".26s",
+        "purpose": "Named flyer view-transition group; no animated root snapshots or body-sheet slide."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "none",
+        "purpose": "Disable animations and transitions; instant hover transform and normal link navigation."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile-max",
+        "value": "720px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Masthead",
+      "kind": "nav",
+      "refersTo": "nav-tab",
+      "description": "Extracted masthead pattern; source values and states, not a new variant.",
+      "html": "<div class=\"ds-preview\"><header class=\"ds-mast\"><a class=\"ds-brand ds-paper ds-tape\" href=\"/\"><strong>Pat Padgett</strong><span>stories, told loud</span></a><nav class=\"ds-nav\" aria-label=\"Site\"><a href=\"/\">all stories</a><a href=\"/start-here/\">start here</a><a href=\"/tags/\">tags</a><a href=\"/about/\">about</a><a href=\"/index.xml\">rss</a></nav></header></div>",
+      "css": ".ds-preview{--toner:#111111;--goldenrod:#f0c419;--pink:#ff6fa8;--blue:#4a90d9;--green:#79c65a;--orange:#ff8a3d;--sheet:#f4f1ea;--pole:#3a2f27;--tape:rgba(236,222,170,.86);--display:\"Big Shoulders\",\"Archivo Narrow\",\"Arial Narrow\",sans-serif;--type:\"Special Elite\",\"Courier New\",monospace;--marker:\"Permanent Marker\",\"Comic Sans MS\",cursive;--body:\"Archivo\",system-ui,sans-serif;--torn-a:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.09 .04' numOctaves='3' seed='2'/><feDisplacementMap in='SourceGraphic' scale='2.6'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--torn-b:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.06 .11' numOctaves='3' seed='9'/><feDisplacementMap in='SourceGraphic' scale='3.1'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--torn-c:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.12 .05' numOctaves='2' seed='17'/><feDisplacementMap in='SourceGraphic' scale='2.2'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--grain:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 -.2'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>\");--ground:var(--goldenrod);font-family:var(--body);font-size:18px;line-height:1.55;color:var(--toner);padding:20px;background:var(--pole)}.ds-preview a{color:inherit}.ds-preview :focus-visible{outline:4px solid var(--goldenrod);outline-offset:4px}.ds-paper :focus-visible,.ds-sheetpaper :focus-visible{outline-color:var(--toner)}\n.ds-paper :focus-visible,.ds-sheetpaper :focus-visible{outline-color:var(--toner)}\n.ds-paper{position:relative;color:var(--toner);isolation:isolate}\n.ds-paper::after{content:\"\";position:absolute;inset:0;pointer-events:none;z-index:0;mix-blend-mode:multiply;opacity:.5;background-image:var(--grain)}\n.ds-paper>*{position:relative;z-index:1}\n.ds-tape{position:relative}\n.ds-tape::before{\n  content:\"\";position:absolute;left:var(--tx,50%);top:-13px;width:var(--tw,120px);height:28px;\n  transform:translateX(-50%) rotate(var(--tr,-3deg));\n  background:var(--tape);z-index:3;\n  -webkit-mask:var(--torn-c) center/100% 100% no-repeat;mask:var(--torn-c) center/100% 100% no-repeat;\n}\n.ds-mast{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:28px clamp(16px,4vw,56px) 0;position:relative;z-index:5}\n.ds-mast a{text-decoration:none}\n.ds-brand{background:var(--sheet);padding:10px 16px 8px;transform:rotate(-1.5deg);display:inline-block;--tw:70px;--tr:4deg}\n.ds-brand strong{font-family:var(--display);font-weight:900;font-size:30px;letter-spacing:-.01em;line-height:1;text-transform:uppercase;display:block}\n.ds-brand span{font-family:var(--type);font-size:13px;display:block;margin-top:2px}\n.ds-nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}\n.ds-nav a,.ds-tabs a,.ds-pager a{\n  font-family:var(--display);font-weight:800;font-size:19px;letter-spacing:.01em;text-transform:uppercase;\n  background:var(--tape);padding:9px 16px;min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;\n  transform:rotate(var(--r,0deg));text-decoration:none;color:var(--toner);\n}\n.ds-nav a:nth-child(1){--r:2deg}\n.ds-nav a:nth-child(2){--r:-1.5deg}\n.ds-nav a:nth-child(3){--r:1deg}\n.ds-nav a:nth-child(4){--r:-2.5deg}\n.ds-nav a[aria-current],.ds-nav a:hover,.ds-tabs a:hover,.ds-pager a:hover{background:var(--toner);color:var(--sheet)}\n.ds-mast.ds-quiet .ds-nav{display:none}\n.ds-tail .ds-nav{justify-content:flex-start;margin-top:28px}\n@media(max-width:720px){\n  article.ds-body{font-size:19px}\n  .ds-mast{padding-top:18px;flex-direction:column;align-items:flex-start}\n  .ds-nav{justify-content:flex-start}\n  .ds-brand strong{font-size:24px}\n  .ds-pole{gap:40px}\n  .ds-cast{--ml:0!important;--mr:0!important}\n  .ds-flyer h2,.ds-flyer h1{font-size:clamp(44px,15.5vw,84px)}\n  .ds-flyer.ds-lead h2,.ds-flyer.ds-lead h1{font-size:clamp(56px,17.5vw,96px)}\n  .ds-mark{position:static;display:inline-block;margin-bottom:12px}\n  .ds-lead-wrap::before{inset:-2% 2% 6% 4%}\n  .ds-lead-wrap::after{inset:5% 4% -3% 1%}\n  article.ds-body pre{margin:1.5em -8px}\n}\n@media(prefers-reduced-motion:reduce){.ds-preview *{transition:none!important;animation:none!important}}"
+    },
+    {
+      "name": "Flyer",
+      "kind": "card",
+      "refersTo": "flyer",
+      "description": "Extracted flyer pattern; source values and states, not a new variant.",
+      "html": "<div class=\"ds-preview\"><div class=\"ds-lead-wrap\"><a class=\"ds-cast\" href=\"/posts/andrew-wk-recorded-my-voicemail/\"><span class=\"ds-flyer ds-paper ds-tape ds-torn\"><h2>Andrew W.K. recorded my voicemail greeting. No, really.</h2><p class=\"ds-proof\">The loudest man in rock, on my outgoing message.</p><div class=\"ds-info\"><span>Dec 15 2026</span><span>No. 030</span><span>894 words</span><span>4 min</span></div></span></a></div></div>",
+      "css": ".ds-preview{--toner:#111111;--goldenrod:#f0c419;--pink:#ff6fa8;--blue:#4a90d9;--green:#79c65a;--orange:#ff8a3d;--sheet:#f4f1ea;--pole:#3a2f27;--tape:rgba(236,222,170,.86);--display:\"Big Shoulders\",\"Archivo Narrow\",\"Arial Narrow\",sans-serif;--type:\"Special Elite\",\"Courier New\",monospace;--marker:\"Permanent Marker\",\"Comic Sans MS\",cursive;--body:\"Archivo\",system-ui,sans-serif;--torn-a:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.09 .04' numOctaves='3' seed='2'/><feDisplacementMap in='SourceGraphic' scale='2.6'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--torn-b:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.06 .11' numOctaves='3' seed='9'/><feDisplacementMap in='SourceGraphic' scale='3.1'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--torn-c:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.12 .05' numOctaves='2' seed='17'/><feDisplacementMap in='SourceGraphic' scale='2.2'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--grain:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 -.2'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>\");--ground:var(--goldenrod);font-family:var(--body);font-size:18px;line-height:1.55;color:var(--toner);padding:20px;background:var(--pole)}.ds-preview a{color:inherit}.ds-preview :focus-visible{outline:4px solid var(--goldenrod);outline-offset:4px}.ds-paper :focus-visible,.ds-sheetpaper :focus-visible{outline-color:var(--toner)}\n.ds-paper :focus-visible,.ds-sheetpaper :focus-visible{outline-color:var(--toner)}\n.ds-paper{position:relative;color:var(--toner);isolation:isolate}\n.ds-paper::after{content:\"\";position:absolute;inset:0;pointer-events:none;z-index:0;mix-blend-mode:multiply;opacity:.5;background-image:var(--grain)}\n.ds-paper>*{position:relative;z-index:1}\n.ds-torn{-webkit-mask:var(--torn-a) center/100% 100% no-repeat;mask:var(--torn-a) center/100% 100% no-repeat}\n.ds-torn.ds-b{-webkit-mask-image:var(--torn-b);mask-image:var(--torn-b)}\n.ds-torn.ds-c{-webkit-mask-image:var(--torn-c);mask-image:var(--torn-c)}\n.ds-tape{position:relative}\n.ds-tape::before{\n  content:\"\";position:absolute;left:var(--tx,50%);top:-13px;width:var(--tw,120px);height:28px;\n  transform:translateX(-50%) rotate(var(--tr,-3deg));\n  background:var(--tape);z-index:3;\n  -webkit-mask:var(--torn-c) center/100% 100% no-repeat;mask:var(--torn-c) center/100% 100% no-repeat;\n}\n.ds-cast{display:block;text-decoration:none;color:inherit;transform:rotate(var(--rot,-1deg));transition:transform .22s cubic-bezier(.2,.8,.2,1);margin-left:var(--ml,0);margin-right:var(--mr,0)}\n.ds-cast:hover,.ds-cast:focus-visible{transform:rotate(0deg) translateY(-4px)}\n.ds-flyer{\n  --ground:var(--goldenrod);\n  background:var(--ground);\n  padding:clamp(28px,5vw,64px) clamp(20px,4vw,56px) clamp(24px,3vw,40px);\n  display:block;\n}\n.ds-flyer.ds-pink{--ground:var(--pink)}\n.ds-flyer.ds-blue{--ground:var(--blue)}\n.ds-flyer.ds-green{--ground:var(--green)}\n.ds-flyer.ds-orange{--ground:var(--orange)}\n.ds-flyer.ds-sheet{--ground:var(--sheet)}\n.ds-flyer h2,.ds-flyer h1{\n  font-family:var(--display);font-weight:900;text-transform:uppercase;\n  line-height:.88;letter-spacing:-.025em;\n  font-size:clamp(46px,8.4vw,132px);\n  text-wrap:balance;overflow-wrap:anywhere;margin-left:-.035em;\n}\n.ds-flyer.ds-lead h2,.ds-flyer.ds-lead h1{font-size:clamp(56px,11vw,170px)}\n.ds-flyer p.ds-proof{font-family:var(--type);font-size:clamp(17px,1.6vw,22px);line-height:1.4;margin-top:22px;max-width:60ch}\n.ds-info{\n  margin-top:clamp(24px,3vw,44px);display:flex;flex-wrap:wrap;gap:6px 0;\n  font-family:var(--type);font-size:15px;\n}\n.ds-info>*+*::before{content:\"/\";padding:0 .8em;opacity:.6}\n.ds-info b{font-weight:400;text-transform:uppercase}\n.ds-info a{text-decoration:none}\n.ds-info a:hover{background:var(--toner);color:var(--sheet)}\n.ds-mark{position:absolute;right:clamp(12px,3vw,40px);top:clamp(14px,3vw,36px);font-family:var(--marker);font-size:clamp(20px,2.2vw,30px);transform:rotate(-8deg);z-index:2}\n.ds-lead-wrap{position:relative}\n.ds-lead-wrap::before,.ds-lead-wrap::after{content:\"\";position:absolute;z-index:-1}\n.ds-lead-wrap::before{background:var(--pink);inset:-3% -2% 6% 4%;transform:rotate(2.6deg);-webkit-mask:var(--torn-b) center/100% 100% no-repeat;mask:var(--torn-b) center/100% 100% no-repeat}\n.ds-lead-wrap::after{background:var(--blue);inset:5% 3% -4% -3%;transform:rotate(-3.2deg);-webkit-mask:var(--torn-c) center/100% 100% no-repeat;mask:var(--torn-c) center/100% 100% no-repeat}\n.ds-post-head .ds-flyer{view-transition-name:flyer}\n.ds-cast.ds-tearing .ds-flyer{view-transition-name:flyer}\n.ds-tail .ds-info{margin-top:0}\n.ds-next .ds-flyer h2{font-size:clamp(34px,4.2vw,64px)}\n.ds-pole.ds-compact .ds-flyer{padding:clamp(20px,3vw,36px) clamp(18px,3vw,44px) clamp(18px,2vw,28px)}\n.ds-pole.ds-compact .ds-flyer h2{font-size:clamp(34px,5.4vw,84px)}\n@media(max-width:720px){\n  article.ds-body{font-size:19px}\n  .ds-mast{padding-top:18px;flex-direction:column;align-items:flex-start}\n  .ds-nav{justify-content:flex-start}\n  .ds-brand strong{font-size:24px}\n  .ds-pole{gap:40px}\n  .ds-cast{--ml:0!important;--mr:0!important}\n  .ds-flyer h2,.ds-flyer h1{font-size:clamp(44px,15.5vw,84px)}\n  .ds-flyer.ds-lead h2,.ds-flyer.ds-lead h1{font-size:clamp(56px,17.5vw,96px)}\n  .ds-mark{position:static;display:inline-block;margin-bottom:12px}\n  .ds-lead-wrap::before{inset:-2% 2% 6% 4%}\n  .ds-lead-wrap::after{inset:5% 4% -3% 1%}\n  article.ds-body pre{margin:1.5em -8px}\n}\n@media(prefers-reduced-motion:reduce){.ds-preview *{transition:none!important;animation:none!important}}"
+    },
+    {
+      "name": "Reading sheet",
+      "kind": "custom",
+      "refersTo": "sheetpaper",
+      "description": "Extracted reading sheet pattern; source values and states, not a new variant.",
+      "html": "<div class=\"ds-preview\"><div class=\"ds-sheetpaper ds-tape ds-torn ds-c\"><article class=\"ds-body\"><p>Okay. I am Pat Padgett.</p><p>This blog is the stories. Not the resume, that lives at <a href=\"https://work.patpadgett.com\">work.patpadgett.com</a>.</p></article><div class=\"ds-tail\"><span class=\"ds-byline\">- Pat</span></div></div></div>",
+      "css": ".ds-preview{--toner:#111111;--goldenrod:#f0c419;--pink:#ff6fa8;--blue:#4a90d9;--green:#79c65a;--orange:#ff8a3d;--sheet:#f4f1ea;--pole:#3a2f27;--tape:rgba(236,222,170,.86);--display:\"Big Shoulders\",\"Archivo Narrow\",\"Arial Narrow\",sans-serif;--type:\"Special Elite\",\"Courier New\",monospace;--marker:\"Permanent Marker\",\"Comic Sans MS\",cursive;--body:\"Archivo\",system-ui,sans-serif;--torn-a:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.09 .04' numOctaves='3' seed='2'/><feDisplacementMap in='SourceGraphic' scale='2.6'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--torn-b:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.06 .11' numOctaves='3' seed='9'/><feDisplacementMap in='SourceGraphic' scale='3.1'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--torn-c:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.12 .05' numOctaves='2' seed='17'/><feDisplacementMap in='SourceGraphic' scale='2.2'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--grain:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 -.2'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>\");--ground:var(--goldenrod);font-family:var(--body);font-size:18px;line-height:1.55;color:var(--toner);padding:20px;background:var(--pole)}.ds-preview a{color:inherit}.ds-preview :focus-visible{outline:4px solid var(--goldenrod);outline-offset:4px}.ds-paper :focus-visible,.ds-sheetpaper :focus-visible{outline-color:var(--toner)}\n.ds-paper :focus-visible,.ds-sheetpaper :focus-visible{outline-color:var(--toner)}\n.ds-torn{-webkit-mask:var(--torn-a) center/100% 100% no-repeat;mask:var(--torn-a) center/100% 100% no-repeat}\n.ds-torn.ds-b{-webkit-mask-image:var(--torn-b);mask-image:var(--torn-b)}\n.ds-torn.ds-c{-webkit-mask-image:var(--torn-c);mask-image:var(--torn-c)}\n.ds-tape{position:relative}\n.ds-tape::before{\n  content:\"\";position:absolute;left:var(--tx,50%);top:-13px;width:var(--tw,120px);height:28px;\n  transform:translateX(-50%) rotate(var(--tr,-3deg));\n  background:var(--tape);z-index:3;\n  -webkit-mask:var(--torn-c) center/100% 100% no-repeat;mask:var(--torn-c) center/100% 100% no-repeat;\n}\n.ds-info{\n  margin-top:clamp(24px,3vw,44px);display:flex;flex-wrap:wrap;gap:6px 0;\n  font-family:var(--type);font-size:15px;\n}\n.ds-info>*+*::before{content:\"/\";padding:0 .8em;opacity:.6}\n.ds-info b{font-weight:400;text-transform:uppercase}\n.ds-info a{text-decoration:none}\n.ds-info a:hover{background:var(--toner);color:var(--sheet)}\n.ds-sheetpaper{background:var(--sheet);padding:clamp(40px,6vw,88px) clamp(20px,5vw,72px) clamp(48px,6vw,88px);--tw:150px;--tr:2deg}\narticle.ds-body{max-width:68ch;margin:0 auto;font-size:clamp(18px,1.25vw,20px);line-height:1.6}\narticle.ds-body p{margin:0 0 1.25em}\narticle.ds-body h2{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:2rem;line-height:1;letter-spacing:-.01em;margin:2.4em 0 .7em}\narticle.ds-body h3{font-family:var(--display);font-weight:700;font-size:1.4rem;margin:2em 0 .5em}\narticle.ds-body a,article.ds-body a:visited{color:var(--toner);text-decoration-thickness:3px;text-decoration-color:var(--pink);text-underline-offset:3px}\narticle.ds-body a:hover{background:var(--goldenrod)}\narticle.ds-body blockquote{margin:1.5em 0 1.5em 1.5em;font-family:var(--type)}\narticle.ds-body code{font-family:var(--type);font-size:.95em;background:rgba(0,0,0,.06);padding:0 .25em}\narticle.ds-body pre{background:var(--toner);color:var(--sheet);padding:20px 24px;overflow:auto;margin:1.5em -12px;font-size:.9em;line-height:1.5}\narticle.ds-body pre code{background:none;padding:0;color:inherit}\narticle.ds-body ul,article.ds-body ol{padding-left:1.4em;margin:0 0 1.25em}\narticle.ds-body li{margin:.3em 0}\narticle.ds-body hr{border:0;height:auto;margin:2.5em 0;text-align:center;font-family:var(--type)}\narticle.ds-body hr::before{content:\"* * *\"}\narticle.ds-body img{margin:1.5em 0;filter:grayscale(1) contrast(1.2)}\narticle.ds-body .ds-placeholder{background:var(--pink);font-family:var(--marker);padding:.1em .3em}\n.ds-tail{max-width:68ch;margin:64px auto 0;font-family:var(--type);font-size:16px}\n.ds-tail .ds-info{margin-top:0}\n.ds-tail .ds-byline{margin-top:28px;font-family:var(--marker);font-size:22px;transform:rotate(-2deg);display:inline-block}\n.ds-tail .ds-nav{justify-content:flex-start;margin-top:28px}\n@media(max-width:720px){\n  article.ds-body{font-size:19px}\n  .ds-mast{padding-top:18px;flex-direction:column;align-items:flex-start}\n  .ds-nav{justify-content:flex-start}\n  .ds-brand strong{font-size:24px}\n  .ds-pole{gap:40px}\n  .ds-cast{--ml:0!important;--mr:0!important}\n  .ds-flyer h2,.ds-flyer h1{font-size:clamp(44px,15.5vw,84px)}\n  .ds-flyer.ds-lead h2,.ds-flyer.ds-lead h1{font-size:clamp(56px,17.5vw,96px)}\n  .ds-mark{position:static;display:inline-block;margin-bottom:12px}\n  .ds-lead-wrap::before{inset:-2% 2% 6% 4%}\n  .ds-lead-wrap::after{inset:5% 4% -3% 1%}\n  article.ds-body pre{margin:1.5em -8px}\n}\n@media(prefers-reduced-motion:reduce){.ds-preview *{transition:none!important;animation:none!important}}"
+    },
+    {
+      "name": "Tag tabs",
+      "kind": "chip",
+      "refersTo": "tag-tab",
+      "description": "Extracted tag tabs pattern; source values and states, not a new variant.",
+      "html": "<div class=\"ds-preview\"><div class=\"ds-tabs\"><a href=\"/tags/music/\">music</a><span>andrew-wk</span><span>live-music</span></div></div>",
+      "css": ".ds-preview{--toner:#111111;--goldenrod:#f0c419;--pink:#ff6fa8;--blue:#4a90d9;--green:#79c65a;--orange:#ff8a3d;--sheet:#f4f1ea;--pole:#3a2f27;--tape:rgba(236,222,170,.86);--display:\"Big Shoulders\",\"Archivo Narrow\",\"Arial Narrow\",sans-serif;--type:\"Special Elite\",\"Courier New\",monospace;--marker:\"Permanent Marker\",\"Comic Sans MS\",cursive;--body:\"Archivo\",system-ui,sans-serif;--torn-a:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.09 .04' numOctaves='3' seed='2'/><feDisplacementMap in='SourceGraphic' scale='2.6'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--torn-b:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.06 .11' numOctaves='3' seed='9'/><feDisplacementMap in='SourceGraphic' scale='3.1'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--torn-c:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.12 .05' numOctaves='2' seed='17'/><feDisplacementMap in='SourceGraphic' scale='2.2'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--grain:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 -.2'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>\");--ground:var(--goldenrod);font-family:var(--body);font-size:18px;line-height:1.55;color:var(--toner);padding:20px;background:var(--pole)}.ds-preview a{color:inherit}.ds-preview :focus-visible{outline:4px solid var(--goldenrod);outline-offset:4px}.ds-paper :focus-visible,.ds-sheetpaper :focus-visible{outline-color:var(--toner)}\n.ds-nav a,.ds-tabs a,.ds-pager a{\n  font-family:var(--display);font-weight:800;font-size:19px;letter-spacing:.01em;text-transform:uppercase;\n  background:var(--tape);padding:9px 16px;min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;\n  transform:rotate(var(--r,0deg));text-decoration:none;color:var(--toner);\n}\n.ds-nav a[aria-current],.ds-nav a:hover,.ds-tabs a:hover,.ds-pager a:hover{background:var(--toner);color:var(--sheet)}\n.ds-tabs{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}\n.ds-tabs a{font-size:16px;text-transform:lowercase;font-family:var(--type);font-weight:400;padding:8px 14px}\n.ds-tabs a:nth-child(odd){--r:-1.5deg}\n.ds-tabs a:nth-child(even){--r:1.2deg}\n.ds-tabs span{padding:8px 4px;min-height:44px;display:inline-flex;align-items:center;opacity:.7}\n.ds-tagdir .ds-tabs a{font-size:18px}\n@media(max-width:720px){\n  article.ds-body{font-size:19px}\n  .ds-mast{padding-top:18px;flex-direction:column;align-items:flex-start}\n  .ds-nav{justify-content:flex-start}\n  .ds-brand strong{font-size:24px}\n  .ds-pole{gap:40px}\n  .ds-cast{--ml:0!important;--mr:0!important}\n  .ds-flyer h2,.ds-flyer h1{font-size:clamp(44px,15.5vw,84px)}\n  .ds-flyer.ds-lead h2,.ds-flyer.ds-lead h1{font-size:clamp(56px,17.5vw,96px)}\n  .ds-mark{position:static;display:inline-block;margin-bottom:12px}\n  .ds-lead-wrap::before{inset:-2% 2% 6% 4%}\n  .ds-lead-wrap::after{inset:5% 4% -3% 1%}\n  article.ds-body pre{margin:1.5em -8px}\n}\n@media(prefers-reduced-motion:reduce){.ds-preview *{transition:none!important;animation:none!important}}"
+    },
+    {
+      "name": "Pager",
+      "kind": "nav",
+      "refersTo": "nav-tab",
+      "description": "Extracted pager pattern; source values and states, not a new variant.",
+      "html": "<div class=\"ds-preview\"><nav class=\"ds-pager\" aria-label=\"Pages\"><span></span><span>pole 1 of 6</span><a href=\"/page/2/\">older flyers</a></nav></div>",
+      "css": ".ds-preview{--toner:#111111;--goldenrod:#f0c419;--pink:#ff6fa8;--blue:#4a90d9;--green:#79c65a;--orange:#ff8a3d;--sheet:#f4f1ea;--pole:#3a2f27;--tape:rgba(236,222,170,.86);--display:\"Big Shoulders\",\"Archivo Narrow\",\"Arial Narrow\",sans-serif;--type:\"Special Elite\",\"Courier New\",monospace;--marker:\"Permanent Marker\",\"Comic Sans MS\",cursive;--body:\"Archivo\",system-ui,sans-serif;--torn-a:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.09 .04' numOctaves='3' seed='2'/><feDisplacementMap in='SourceGraphic' scale='2.6'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--torn-b:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.06 .11' numOctaves='3' seed='9'/><feDisplacementMap in='SourceGraphic' scale='3.1'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--torn-c:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.12 .05' numOctaves='2' seed='17'/><feDisplacementMap in='SourceGraphic' scale='2.2'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--grain:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 -.2'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>\");--ground:var(--goldenrod);font-family:var(--body);font-size:18px;line-height:1.55;color:var(--toner);padding:20px;background:var(--pole)}.ds-preview a{color:inherit}.ds-preview :focus-visible{outline:4px solid var(--goldenrod);outline-offset:4px}.ds-paper :focus-visible,.ds-sheetpaper :focus-visible{outline-color:var(--toner)}\n.ds-nav a,.ds-tabs a,.ds-pager a{\n  font-family:var(--display);font-weight:800;font-size:19px;letter-spacing:.01em;text-transform:uppercase;\n  background:var(--tape);padding:9px 16px;min-height:44px;min-width:44px;display:inline-flex;align-items:center;justify-content:center;\n  transform:rotate(var(--r,0deg));text-decoration:none;color:var(--toner);\n}\n.ds-nav a[aria-current],.ds-nav a:hover,.ds-tabs a:hover,.ds-pager a:hover{background:var(--toner);color:var(--sheet)}\n.ds-pager{max-width:1180px;margin:-40px auto 0;padding:0 clamp(12px,3vw,48px) 100px;display:flex;justify-content:space-between;gap:16px}\n.ds-pager a:first-child{--r:-1.5deg}\n.ds-pager a:last-child{--r:1.2deg}\n.ds-pager span{font-family:var(--type);color:var(--sheet);align-self:center;font-size:16px}\n@media(max-width:720px){\n  article.ds-body{font-size:19px}\n  .ds-mast{padding-top:18px;flex-direction:column;align-items:flex-start}\n  .ds-nav{justify-content:flex-start}\n  .ds-brand strong{font-size:24px}\n  .ds-pole{gap:40px}\n  .ds-cast{--ml:0!important;--mr:0!important}\n  .ds-flyer h2,.ds-flyer h1{font-size:clamp(44px,15.5vw,84px)}\n  .ds-flyer.ds-lead h2,.ds-flyer.ds-lead h1{font-size:clamp(56px,17.5vw,96px)}\n  .ds-mark{position:static;display:inline-block;margin-bottom:12px}\n  .ds-lead-wrap::before{inset:-2% 2% 6% 4%}\n  .ds-lead-wrap::after{inset:5% 4% -3% 1%}\n  article.ds-body pre{margin:1.5em -8px}\n}\n@media(prefers-reduced-motion:reduce){.ds-preview *{transition:none!important;animation:none!important}}"
+    },
+    {
+      "name": "Theme",
+      "kind": "custom",
+      "refersTo": "theme",
+      "description": "Extracted theme pattern; source values and states, not a new variant.",
+      "html": "<div class=\"ds-preview\"><section class=\"ds-theme ds-tape ds-torn ds-c\"><h2>If you only read five</h2><ol><li><a href=\"/posts/andrew-wk-recorded-my-voicemail/\"><b>Andrew W.K. recorded my voicemail greeting. No, really.</b><span>The loudest man in rock, on my outgoing message.</span></a></li></ol></section></div>",
+      "css": ".ds-preview{--toner:#111111;--goldenrod:#f0c419;--pink:#ff6fa8;--blue:#4a90d9;--green:#79c65a;--orange:#ff8a3d;--sheet:#f4f1ea;--pole:#3a2f27;--tape:rgba(236,222,170,.86);--display:\"Big Shoulders\",\"Archivo Narrow\",\"Arial Narrow\",sans-serif;--type:\"Special Elite\",\"Courier New\",monospace;--marker:\"Permanent Marker\",\"Comic Sans MS\",cursive;--body:\"Archivo\",system-ui,sans-serif;--torn-a:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.09 .04' numOctaves='3' seed='2'/><feDisplacementMap in='SourceGraphic' scale='2.6'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--torn-b:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.06 .11' numOctaves='3' seed='9'/><feDisplacementMap in='SourceGraphic' scale='3.1'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--torn-c:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><filter id='f' x='-5%' y='-5%' width='110%' height='110%'><feTurbulence type='fractalNoise' baseFrequency='.12 .05' numOctaves='2' seed='17'/><feDisplacementMap in='SourceGraphic' scale='2.2'/></filter><rect x='1' y='1' width='98' height='98' fill='%23000' filter='url(%23f)'/></svg>\");--grain:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 -.2'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>\");--ground:var(--goldenrod);font-family:var(--body);font-size:18px;line-height:1.55;color:var(--toner);padding:20px;background:var(--pole)}.ds-preview a{color:inherit}.ds-preview :focus-visible{outline:4px solid var(--goldenrod);outline-offset:4px}.ds-paper :focus-visible,.ds-sheetpaper :focus-visible{outline-color:var(--toner)}\n.ds-torn{-webkit-mask:var(--torn-a) center/100% 100% no-repeat;mask:var(--torn-a) center/100% 100% no-repeat}\n.ds-torn.ds-b{-webkit-mask-image:var(--torn-b);mask-image:var(--torn-b)}\n.ds-torn.ds-c{-webkit-mask-image:var(--torn-c);mask-image:var(--torn-c)}\n.ds-tape{position:relative}\n.ds-tape::before{\n  content:\"\";position:absolute;left:var(--tx,50%);top:-13px;width:var(--tw,120px);height:28px;\n  transform:translateX(-50%) rotate(var(--tr,-3deg));\n  background:var(--tape);z-index:3;\n  -webkit-mask:var(--torn-c) center/100% 100% no-repeat;mask:var(--torn-c) center/100% 100% no-repeat;\n}\n.ds-theme{background:var(--sheet);padding:clamp(28px,4vw,56px);transform:rotate(var(--rot,-.7deg))}\n.ds-theme:nth-child(even){--rot:.9deg}\n.ds-theme h2{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(40px,5vw,72px);line-height:.9;letter-spacing:-.02em}\n.ds-theme p{font-family:var(--type);margin:12px 0 22px;max-width:60ch}\n.ds-theme ol{list-style:none;display:grid;gap:14px}\n.ds-theme li a{display:block;text-decoration:none;padding:14px 16px;background:var(--ground,var(--goldenrod));transform:rotate(var(--r,-.5deg))}\n.ds-theme li:nth-child(2n) a{--ground:var(--pink);--r:.6deg}\n.ds-theme li:nth-child(3n) a{--ground:var(--blue);--r:-.9deg}\n.ds-theme li:nth-child(4n) a{--ground:var(--green);--r:.4deg}\n.ds-theme li a b{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(22px,2.4vw,32px);line-height:1;display:block}\n.ds-theme li a span{font-family:var(--type);font-size:15px;display:block;margin-top:6px}\n@media(max-width:720px){\n  article.ds-body{font-size:19px}\n  .ds-mast{padding-top:18px;flex-direction:column;align-items:flex-start}\n  .ds-nav{justify-content:flex-start}\n  .ds-brand strong{font-size:24px}\n  .ds-pole{gap:40px}\n  .ds-cast{--ml:0!important;--mr:0!important}\n  .ds-flyer h2,.ds-flyer h1{font-size:clamp(44px,15.5vw,84px)}\n  .ds-flyer.ds-lead h2,.ds-flyer.ds-lead h1{font-size:clamp(56px,17.5vw,96px)}\n  .ds-mark{position:static;display:inline-block;margin-bottom:12px}\n  .ds-lead-wrap::before{inset:-2% 2% 6% 4%}\n  .ds-lead-wrap::after{inset:5% 4% -3% 1%}\n  article.ds-body pre{margin:1.5em -8px}\n}\n@media(prefers-reduced-motion:reduce){.ds-preview *{transition:none!important;animation:none!important}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Photocopied Show Flyer",
+    "overview": "The Photocopied Show Flyer puts heavy condensed headlines on colored copy paper against a wooden telephone pole. Tape, torn edges, toner damage and offset sheets supply the material vocabulary; there are no paper shadows, borders, gradients or rounded corners.\n\nLong-form writing sits on a straight, untextured off-white sheet. The display treatment stops at the story: Archivo carries the paragraphs, while typewriter metadata and marker annotations have separate roles.",
+    "keyCharacteristics": [
+      "Colored copy paper with toner-black text.",
+      "Torn masks and translucent tape, not card chrome.",
+      "Condensed uppercase display type; straight, quiet reading sheets.",
+      "Short paper movement with plain-link fallback."
+    ],
+    "rules": [],
+    "dos": [
+      "Do edit /data/pat/websites/blog/build/assets/flyer.css and rebuild; assets/flyer.css under this project is generated.",
+      "Do keep article text at 68ch maximum, line-height 1.6, and 19px at widths up to 720px.",
+      "Do keep the focusable cast outside the torn mask and retain visible focus outlines.",
+      "Do retain real links, semantic headings, English document language, labeled navigation and image alt text.",
+      "Do gate publication by date and unresolved [PAT:] markers; use preview overrides only for review."
+    ],
+    "donts": [
+      "Don't add gradients, shadows, borders or radii to paper; the pole lighting is the deliberate exception to the gradient ban.",
+      "Don't put grain or toner filters over article prose.",
+      "Don't describe the contract's older palette, halftone dots or sliding body-sheet animation as implemented.",
+      "Don't add CDN fonts, comments, newsletter prompts or enabled analytics without authorization."
+    ]
+  }
+}

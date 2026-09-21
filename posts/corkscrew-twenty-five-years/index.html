@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Twenty-five years of corkscrew. All 291 damned lines. · Weekly Padgett</title>
+<meta name="description" content="I wrote 291 lines of C to get SSH through a corporate proxy in 2000. Linux distributions kept shipping it. Modern analysis has some things to tell me.">
+<link rel="canonical" href="https://blog.patpadgett.com/posts/corkscrew-twenty-five-years/">
+<link rel="alternate" type="application/rss+xml" title="Weekly Padgett" href="https://blog.patpadgett.com/index.xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#dd0000">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Weekly Padgett">
+<meta property="og:title" content="Twenty-five years of corkscrew. All 291 damned lines. · Weekly Padgett">
+<meta property="og:description" content="I wrote 291 lines of C to get SSH through a corporate proxy in 2000. Linux distributions kept shipping it. Modern analysis has some things to tell me.">
+<meta property="og:url" content="https://blog.patpadgett.com/posts/corkscrew-twenty-five-years/">
+<meta property="og:image" content="https://blog.patpadgett.com/assets/og/corkscrew-twenty-five-years.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Twenty-five years of corkscrew. All 291 damned lines. · Weekly Padgett">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Twenty-five years of corkscrew. All 291 damned lines. · Weekly Padgett">
+<meta name="twitter:description" content="I wrote 291 lines of C to get SSH through a corporate proxy in 2000. Linux distributions kept shipping it. Modern analysis has some things to tell me.">
+<meta name="twitter:image" content="https://blog.patpadgett.com/assets/og/corkscrew-twenty-five-years.jpg">
+<link rel="preload" href="/assets/fonts/Bangers-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/Nunito-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/tabloid.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Twenty-five years of corkscrew. All 291 damned lines.", "description": "I wrote 291 lines of C to get SSH through a corporate proxy in 2000. Linux distributions kept shipping it. Modern analysis has some things to tell me.", "datePublished": "2026-09-21", "dateModified": "2026-09-21", "wordCount": 378, "keywords": "corkscrew, c, ssh, open-source", "url": "https://blog.patpadgett.com/posts/corkscrew-twenty-five-years/", "image": "https://blog.patpadgett.com/assets/og/corkscrew-twenty-five-years.jpg", "mainEntityOfPage": "https://blog.patpadgett.com/posts/corkscrew-twenty-five-years/", "author": {"@type": "Person", "name": "Patrick Padgett", "url": "https://patpadgett.com"}, "publisher": {"@type": "Person", "name": "Patrick Padgett", "url": "https://patpadgett.com"}, "isPartOf": {"@type": "Blog", "name": "Weekly Padgett", "url": "https://blog.patpadgett.com/"}}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to the stories</a>
+<div class="wrap">
+<header class="masthead small">
+<p class="brand"><a href="/">Weekly Padgett</a></p>
+<nav class="top" aria-label="Site">
+<a href="/">All stories</a>
+<a href="/start-here/">Shocking!</a>
+<a href="/tags/">Keywords</a>
+<a href="/about/">Who is he?</a>
+<a href="/index.xml">RSS</a>
+</nav>
+</header>
+<main class="sheet" id="main">
+<div class="hero"><div class="pic"><img src="/assets/img/corkscrew-twenty-five-years.jpg" alt="A small circuit board bridges a proxy server and a home computer." width="1200" height="800" fetchpriority="high"></div></div>
+<p class="k hot"><time datetime="2026-09-21">September 21, 2026</time> · No. 001 · 2 min read</p>
+<h1>Twenty-five years of corkscrew. All 291 damned lines.</h1>
+<p class="dek">I wrote 291 lines of C to get SSH through a corporate proxy in 2000. Linux distributions kept shipping it. Modern analysis has some things to tell me.</p>
+<article class="body">
+<p>I wrote corkscrew[1] in an afternoon. A quarter century later I'm still discussing it, although I would have preferred to be discussing something other than its stack buffer overflow.</p>
+<p>In 2000 I was behind a corporate HTTP proxy that let port 443 out and nothing else. I wanted SSH access to my own machine at home. The proxy spoke HTTP CONNECT[2], SSH spoke a raw TCP stream, and OpenSSH[3] had this option nobody seemed to use, <code>ProxyCommand</code>. I wrote the thing to sit between them.</p>
+<p>291 lines of C, folks. Debian[4], Ubuntu, Red Hat, CentOS, FreeBSD and Cygwin have packaged it. Linux Magazine and 2600 reviewed it. It has a Wikipedia article. An afternoon's work has an encyclopedia entry now!!! I certainly didn't expect that.</p>
+<p>I recently had the source put through GCC[5] static analysis, AddressSanitizer[6], UndefinedBehaviorSanitizer, and a loopback mock proxy sending deliberately hostile responses. I wanted to know what 26-year-old C looks like under modern tooling, and, well... it looks like 26-year-old C. Fuck.</p>
+<p>The big finding is a stack buffer overflow reachable from the proxy. The response handler does a <code>read()</code> into a 4096-byte buffer, doesn't add a terminator, and hands it to <code>sscanf()</code> with unbounded <code>%s</code>. Send 4096 non-whitespace bytes and you get a write one byte past the buffer. No code execution was demonstrated. A hostile proxy can still corrupt the client's stack, and I do not particularly enjoy typing that about MY software.</p>
+<p>The framing bug bothers me more, because I can't blame a typo. The code treats the first <code>read()</code> as the whole proxy response, and on a 200 it throws all of it away. If headers and the first bytes of the SSH greeting arrive in the same segment, the greeting goes with them. And with fragmented headers it tries to parse <code>HTTP/1.</code> and exits.</p>
+<p>It worked for 25 years because proxies almost always send headers in their own packet. I wrote that assumption into the thing, and now I get to look at it again.</p>
+<p>The rest I'd leave alone. But those damned buffers need terminators.</p>
+<section class="refs"><h2 id="references">References</h2>
+<ol>
+<li>corkscrew: https://en.wikipedia.org/wiki/Corkscrew_(program)</li>
+<li>HTTP CONNECT: https://www.rfc-editor.org/rfc/rfc9110.html#name-connect</li>
+<li>OpenSSH: https://www.openssh.com/</li>
+<li>Debian: https://www.debian.org/</li>
+<li>GCC: https://gcc.gnu.org/</li>
+<li>AddressSanitizer: https://clang.llvm.org/docs/AddressSanitizer.html</li>
+</ol>
+</section>
+</article>
+<div class="tail"><div class="tags"><span>corkscrew</span><span>c</span><span>ssh</span><span>open-source</span></div><span class="byline">- Pat</span></div>
+<nav class="pn" aria-label="Adjacent stories"><span></span></nav>
+</main>
+
+<footer>
+<p>Also at checkout:</p>
+<nav aria-label="Elsewhere">
+<a href="https://patpadgett.com">patpadgett.com</a>
+<a href="https://work.patpadgett.com">work</a>
+<a href="https://music.patpadgett.com">music</a>
+<a href="https://octavitin.patpadgett.com">octavitin</a>
+<a href="https://grime95.com">grime95</a>
+<a href="/index.xml">rss</a>
+</nav>
+<p class="fine">Written by Patrick Padgett. Every word here is mine, including the ones I should have cut. Flat HTML, no trackers, no comments section. If you want to argue, you know where to find me.</p>
+</footer>
+</div>
+</body></html>
