@@ -43,9 +43,10 @@
 <a href="/index.xml">RSS</a>
 </nav>
 </header>
-<main class="sheet" id="main">
+<main class="sheet sheet--about" id="main">
 <h1>Who is this man?</h1>
 <p class="dek">And why is he shouting.</p>
+<figure class="filephoto"><img src="/assets/filephoto.jpg" width="640" height="640" alt="Patrick Padgett, looking like a man who has seen a billing record." loading="lazy"><figcaption><b>File photo</b>The suspect, at large in Tampa Bay.</figcaption></figure>
 <article class="body"><p>Okay. I am Pat Padgett. Forty-seven, Tampa Bay, Florida, by way of Camdenton, Missouri and fourteen years in a billing mediation cubicle in Overland Park, Kansas.</p>
 <p>I ran dial-up ISPs as a teenager. I wrote a 291-line C program called corkscrew in the year 2000 and it is STILL in Debian, which is either a compliment to the program or an indictment of everybody who never replaced it. I spent fourteen years making sure Sprint billed the right people the right amount for the right phone calls, which is a job nobody outside telecom has heard of and everybody inside it is terrified of. I play bass. I have produced records in two languages. I met my favorite band and they turned out to be good people, which almost never happens.</p>
 <p>This blog is the stories. Not the resume, that lives at <a href="https://work.patpadgett.com">work.patpadgett.com</a>. The stories: the ones I tell at a bar when somebody makes the mistake of asking what I do.</p>
@@ -53,9 +54,10 @@
 <p>Every post is flat HTML. No comments, no newsletter popup, no tracking. Subscribe with the <a href="/index.xml">RSS feed</a> like a dinosaur, or come back whenever. There is a new story every three days.</p>
 <p>Mail me: <a href="mailto:pat@patpadgett.com">pat@patpadgett.com</a>. Everything else is at <a href="https://patpadgett.com">patpadgett.com</a>.</p>
 </article>
-<div class="tail"><span></span><span class="byline">- Pat</span></div>
+<div class="tail"><span></span><span class="byline">&ndash; Pat</span></div>
 </main>
 <footer>
+<div class="foot__l">
 <p>Also at checkout:</p>
 <nav aria-label="Elsewhere">
 <a href="https://patpadgett.com">patpadgett.com</a>
@@ -66,6 +68,9 @@
 <a href="/index.xml">rss</a>
 </nav>
 <p class="fine">Written by Patrick Padgett. Every word here is mine, including the ones I should have cut. Flat HTML, no trackers, no comments section. If you want to argue, you know where to find me.</p>
+</div>
+<div class="foot__r" aria-hidden="true"><p class="foot__stamp">Printed on<br>flat HTML</p><p class="foot__price">99¢</p></div>
 </footer>
 </div>
+<script>(function(){if(!('IntersectionObserver'in window)||matchMedia('(prefers-reduced-motion:reduce)').matches)return;var els=[].slice.call(document.querySelectorAll('.post,.box,.coming,.coupon,.theme,.psychic')).filter(function(e){return e.getBoundingClientRect().top>innerHeight});els.forEach(function(e){e.classList.add('pre')});var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=els.indexOf(e.target);setTimeout(function(){e.target.classList.add('in')},(i%3)*70);io.unobserve(e.target)}})},{rootMargin:'0px 0px -5% 0px'});els.forEach(function(e){io.observe(e)});setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},4000)})();</script>
 </body></html>

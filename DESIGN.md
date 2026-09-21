@@ -177,3 +177,14 @@ Global focus-visible is a 4px solid goldenrod outline at 4px offset. Focus insid
 `build.py` generates flat HTML from Markdown/YAML. Default production selection excludes posts containing `[PAT:` and dates after `--date` (default today in America/New_York); exclusion is reported rather than aborting the whole build. `--allow-placeholders` and `--include-future` are review overrides, not publication defaults. Preview placeholders use pink marker styling. The inspected Andrew W.K. page contains these marks and the index contains future-dated posts; do not deploy that snapshot as proof that the gates passed.
 
 `MIN_TAG = 3`: only tags attached to at least three selected posts earn pages and links; smaller tags stay text spans. `PER_PAGE = 24`: the pole paginates, newest first, instead of expanding forever. Only the first flyer on the first index page gets lead-wrap and lead size. Start Here lists include only selected posts. Flyer rotation, mask, margin, tape and color choices are deterministic; preserve the generator's selection rules rather than hand-editing generated HTML. Analytics IDs are empty by default. No comments or newsletter UI is generated.
+
+
+## Polish pass (2026-09-21) — flow, alignment, props, motion
+- One gutter token `--g` for masthead, hero, columns, pager, list pages and footer; headline/dek/kicker share a left edge (italic overhang compensated).
+- Kicker `date · No. · read time` wraps as units, separator at line end. Masthead price strip on its own line, pluralises.
+- Thin-newsstand state (index, <6 cards): the main column carries a taped "Next issue" card with an undeveloped-photo square, a two-column "Coming attractions" classifieds list of the next eight dated posts, and a Clip & Save RSS coupon; a red double-rule PREMIERE ISSUE stamp sits on the next-issue card while fewer than three posts exist. All of it disappears as the stand fills.
+- Start Here hides empty theme lists and says how many are "still at the printer"; blurbs no longer fall into the numeral column.
+- About: floated "File photo" Polaroid of Pat; tail rule matches the 62ch measure.
+- Footer: two columns — checkout links + colophon left, PRINTED ON FLAT HTML sticker and 99¢ right.
+- Motion: the starburst slaps on once (`slap`), the stamp lands (`stampin`), nav tabs settle flat on hover, cards lift on title hover, and below-fold boxes land on the stand as they scroll in (`.pre → .in`, IntersectionObserver, only elements below the first viewport, 4s safety). Reduced motion disables all of it.
+- Drop cap is an upright reversed-out Nunito letter; inline code hugs punctuation.
