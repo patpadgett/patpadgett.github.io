@@ -156,8 +156,9 @@ nav.top a:hover,nav.top a[aria-current]{background:#fff}
 
 /* post page */
 .sheet{padding:clamp(16px,3vw,32px) clamp(20px,4vw,48px) clamp(20px,4vw,48px);max-width:960px;margin:0 auto}
-@media (min-width:821px){.sheet .lede{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:0 28px;align-items:stretch;max-width:682px}.sheet .lede>.k,.sheet .lede>h1,.sheet .lede>.dek{grid-column:1}.sheet .lede>.k{align-self:start}.sheet .lede>.dek{margin-bottom:0}.sheet .lede>figure.hero{grid-column:2;grid-row:1/4;margin:0;display:flex}.sheet .lede .hero .pic{aspect-ratio:auto;max-height:none;height:100%;width:100%}.sheet .lede .hero .pic img{height:100%}}
+@media (min-width:821px){.sheet .lede{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:0 24px;align-items:start;max-width:682px}.sheet .lede h1{font-size:clamp(40px,4.4vw,60px)}.sheet .lede>.k,.sheet .lede>h1,.sheet .lede>.dek{grid-column:1}.sheet .lede>.dek{margin-bottom:0}.sheet .lede>figure.hero{grid-column:2;grid-row:1/4;margin:0;align-self:start}.sheet .lede .hero .pic{aspect-ratio:3/4;max-height:none}.sheet .lede .hero .pic img{object-position:50% 0}}
 .sheet .lede{margin-bottom:24px}
+@media (min-width:821px){.sheet>.lede,.sheet>.body,.sheet>.tail,.sheet>.pn,.sheet>h1,.sheet>.dek,.sheet>.k,.sheet>.filephoto{margin-left:auto;margin-right:auto}.sheet>.body,.sheet>.tail,.sheet>.pn{max-width:682px}}
 .sheet .hero{padding:0;margin:0 0 14px}
 .sheet .hero .pic{aspect-ratio:2/1;max-height:30vh}
 .sheet figure.hero{margin:0 0 20px}
