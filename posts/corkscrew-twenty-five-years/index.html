@@ -44,10 +44,12 @@
 </nav>
 </header>
 <main class="sheet" id="main" tabindex="-1">
+<header class="lede">
 <p class="k hot"><span><time datetime="2026-09-21">September 21, 2026</time></span><span>No. 001</span><span>2 min read</span></p>
 <h1>Twenty-five years of corkscrew. All 291 damned lines.</h1>
 <p class="dek">I wrote 291 lines of C to get SSH through a corporate proxy in 2000. Linux distributions kept shipping it. Modern analysis has some things to tell me.</p>
 <figure class="hero"><div class="pic"><img src="/assets/img/corkscrew-twenty-five-years.jpg" alt="A small circuit board bridges a proxy server and a home computer." width="1200" height="800" fetchpriority="high"></div></figure>
+</header>
 <article class="body">
 <p>I wrote corkscrew<a class="cite" id="cite-1" href="#ref-1" aria-label="Reference 1">[1]</a> in an afternoon. A quarter century later I'm still discussing it, although I would have preferred to be discussing something other than its stack buffer overflow.</p>
 <p>In 2000 I was behind a corporate HTTP proxy that let port 443 out and nothing else. I wanted SSH access to my own machine at home. The proxy spoke HTTP CONNECT<a class="cite" id="cite-2" href="#ref-2" aria-label="Reference 2">[2]</a>, SSH spoke a raw TCP stream, and OpenSSH<a class="cite" id="cite-3" href="#ref-3" aria-label="Reference 3">[3]</a> had this option nobody seemed to use, <code>ProxyCommand</code>. I wrote the thing to sit between them.</p>
