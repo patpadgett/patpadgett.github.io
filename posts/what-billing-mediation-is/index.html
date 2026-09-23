@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Billing mediation: somebody has to find the damned money · Weekly Padgett</title>
+<meta name="description" content="Fourteen years between the switch and the bill, finding missing money in binary records. What telecom mediation does, and why two bytes can ruin your day.">
+<link rel="canonical" href="https://blog.patpadgett.com/posts/what-billing-mediation-is/">
+<link rel="alternate" type="application/rss+xml" title="Weekly Padgett" href="https://blog.patpadgett.com/index.xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#dd0000">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Weekly Padgett">
+<meta property="og:title" content="Billing mediation: somebody has to find the damned money · Weekly Padgett">
+<meta property="og:description" content="Fourteen years between the switch and the bill, finding missing money in binary records. What telecom mediation does, and why two bytes can ruin your day.">
+<meta property="og:url" content="https://blog.patpadgett.com/posts/what-billing-mediation-is/">
+<meta property="og:image" content="https://blog.patpadgett.com/assets/og/what-billing-mediation-is.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Billing mediation: somebody has to find the damned money · Weekly Padgett">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Billing mediation: somebody has to find the damned money · Weekly Padgett">
+<meta name="twitter:description" content="Fourteen years between the switch and the bill, finding missing money in binary records. What telecom mediation does, and why two bytes can ruin your day.">
+<meta name="twitter:image" content="https://blog.patpadgett.com/assets/og/what-billing-mediation-is.jpg">
+<link rel="preload" href="/assets/fonts/Bangers-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/Nunito-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/tabloid.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Billing mediation: somebody has to find the damned money", "description": "Fourteen years between the switch and the bill, finding missing money in binary records. What telecom mediation does, and why two bytes can ruin your day.", "datePublished": "2026-09-23", "dateModified": "2026-09-23", "wordCount": 307, "keywords": "telecom, billing-mediation, cdr", "url": "https://blog.patpadgett.com/posts/what-billing-mediation-is/", "image": "https://blog.patpadgett.com/assets/og/what-billing-mediation-is.jpg", "mainEntityOfPage": "https://blog.patpadgett.com/posts/what-billing-mediation-is/", "author": {"@type": "Person", "name": "Patrick Padgett", "url": "https://patpadgett.com"}, "publisher": {"@type": "Person", "name": "Patrick Padgett", "url": "https://patpadgett.com"}, "isPartOf": {"@type": "Blog", "name": "Weekly Padgett", "url": "https://blog.patpadgett.com/"}}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to the stories</a>
+<div class="wrap">
+<header class="masthead small">
+<p class="brand"><a href="/">Weekly Padgett</a></p>
+<nav class="top" aria-label="Site">
+<a href="/">All stories</a>
+<a href="/start-here/">Start here!</a>
+<a href="/tags/">Topics</a>
+<a href="/about/">About</a>
+<a href="/index.xml">RSS</a>
+</nav>
+</header>
+<main class="sheet" id="main" tabindex="-1">
+<header class="lede">
+<p class="k hot"><span><time datetime="2026-09-23">September 23, 2026</time></span><span>No. 002</span><span>1 min read</span></p>
+<h1>Billing mediation: somebody has to find the damned money</h1>
+<p class="dek">Fourteen years between the switch and the bill, finding missing money in binary records. What telecom mediation does, and why two bytes can ruin your day.</p>
+<figure class="hero"><div class="pic"><img src="/assets/img/what-billing-mediation-is.jpg" alt="A kneeling person holds a dustpan beside scattered debris beneath a desk with reel-to-reel equipment." width="1200" height="800" fetchpriority="high"></div><figcaption><b>File photo</b>Dramatization. No telecom was harmed.</figcaption></figure>
+</header>
+<article class="body">
+<p>You hear &quot;billing mediation<a class="cite" id="cite-1" href="#ref-1" aria-label="Reference 1">[1]</a>&quot; and probably picture me spending fourteen years looking at invoices. I understand, but there is a looooong way to go before an invoice exists, and I worked in the middle where a phone company either makes its money or quietly loses it.</p>
+<p>The switch doesn't give a damn about your rate plan. It records the A-number, B-number, start time, duration, cell site, trunk group, cause code, and a few dozen other fields in a proprietary binary structure.</p>
+<p>Billing needs somebody to translate that thing before it can rate it, which is where mediation comes in.</p>
+<p>Collection means pulling files from 130 switches over whatever they support: FTP<a class="cite" id="cite-2" href="#ref-2" aria-label="Reference 2">[2]</a>, X.25<a class="cite" id="cite-3" href="#ref-3" aria-label="Reference 3">[3]</a> on the old ones, a vendor-specific push. It runs on a schedule, and you verify every file in the sequence and SCREAM when a number is missing. The call already happened! That gap is unbilled revenue until somebody gets its record.</p>
+<p>Then you parse the binary. Release 17 added a field and shifted everything after it by two bytes, and nobody told you. Two BYTES! Plenty of room to fuck up your afternoon.</p>
+<p>Reconciliation means counting what came in against what went out at <em>every</em> stage, then explaining every difference. You don't get to shrug at the leftovers.</p>
+<p>Over fourteen years I recovered tens of millions of dollars finding that shit. Mangled headers, truncated tails, sequence gaps, records rejected into an error queue nobody watched. It was hex dumps<a class="cite" id="cite-4" href="#ref-4" aria-label="Reference 4">[4]</a> and &quot;why did this file stop at byte 48,201?&quot; I am proud of that work, even if I mostly remember staring at hex dumps.</p>
+<p>And I still want to look in that fucking error queue.</p>
+<section class="refs"><h2 id="references">References</h2>
+<ol>
+<li id="ref-1" value="1" tabindex="-1"><a href="https://en.wikipedia.org/wiki/Telecommunications_mediation" rel="noopener">billing mediation</a> <small>en.wikipedia.org</small> <a class="backref" href="#cite-1" aria-label="Back to citation 1">&#8617;</a></li>
+<li id="ref-2" value="2" tabindex="-1"><a href="https://www.rfc-editor.org/rfc/rfc959" rel="noopener">FTP</a> <small>rfc-editor.org</small> <a class="backref" href="#cite-2" aria-label="Back to citation 2">&#8617;</a></li>
+<li id="ref-3" value="3" tabindex="-1"><a href="https://en.wikipedia.org/wiki/X.25" rel="noopener">X.25</a> <small>en.wikipedia.org</small> <a class="backref" href="#cite-3" aria-label="Back to citation 3">&#8617;</a></li>
+<li id="ref-4" value="4" tabindex="-1"><a href="https://en.wikipedia.org/wiki/Hex_dump" rel="noopener">hex dumps</a> <small>en.wikipedia.org</small> <a class="backref" href="#cite-4" aria-label="Back to citation 4">&#8617;</a></li>
+</ol>
+</section>
+</article>
+<div class="tail"><div class="tags"><span>telecom</span><span>billing-mediation</span><span>cdr</span></div><span class="byline">&ndash; Pat</span></div>
+<nav class="pn" aria-label="Adjacent stories"><a href="/posts/corkscrew-twenty-five-years/"><b>Previous exclusive</b><span>Twenty-five years of corkscrew. All 291 damned lines.</span></a><div class="pn--next"><b>Next issue · September 25</b><span>Never post twice. Yes, even when I run the damned thing twice.</span><p><a class="rss-btn" href="/index.xml">Get it by RSS</a> <a class="rss-how" href="/about/#rss">What is RSS?</a></p></div></nav>
+</main>
+
+<footer>
+<div class="foot__l">
+<p>Also at checkout:</p>
+<nav aria-label="Elsewhere">
+<a href="https://patpadgett.com">patpadgett.com</a>
+<a href="https://work.patpadgett.com">work</a>
+<a href="https://music.patpadgett.com">music</a>
+<a href="https://octavitin.patpadgett.com">octavitin</a>
+<a href="https://grime95.com">grime95</a>
+<a href="/index.xml">rss</a>
+</nav>
+<p class="fine">Written by Patrick Padgett. Every word here is mine, including the ones I should have cut. Flat HTML, no trackers, no comments section. If you want to argue, you know where to find me.</p>
+</div>
+<div class="foot__r" aria-hidden="true"><p class="foot__stamp">Printed on<br>flat HTML</p><p class="foot__price">99¢</p></div>
+</footer>
+</div>
+<script>(function(){if(!('IntersectionObserver'in window)||matchMedia('(prefers-reduced-motion:reduce)').matches)return;var els=[].slice.call(document.querySelectorAll('.post,.box,.coming,.coupon,.theme,.psychic')).filter(function(e){return e.getBoundingClientRect().top>innerHeight});els.forEach(function(e){e.classList.add('pre')});var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var i=els.indexOf(e.target);setTimeout(function(){e.target.classList.add('in')},(i%3)*70);io.unobserve(e.target)}})},{rootMargin:'0px 0px -5% 0px'});els.forEach(function(e){io.observe(e)});setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},4000)})();</script>
+</body></html>

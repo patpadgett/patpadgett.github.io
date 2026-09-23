@@ -2,6 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
 <channel><title>Weekly Padgett</title><link>https://blog.patpadgett.com/</link><description>Stories from thirty years of telecom billing mediation, Unix, corkscrew, bass guitar, Indonesian music, and whatever else Pat Padgett could not shut up about.</description><language>en-us</language>
 <atom:link href="https://blog.patpadgett.com/index.xml" rel="self" type="application/rss+xml"/>
+<item><title>Billing mediation: somebody has to find the damned money</title><link>https://blog.patpadgett.com/posts/what-billing-mediation-is/</link><guid>https://blog.patpadgett.com/posts/what-billing-mediation-is/</guid>
+<pubDate>Wed, 23 Sep 2026 12:00:00 -0400</pubDate><description>Fourteen years between the switch and the bill, finding missing money in binary records. What telecom mediation does, and why two bytes can ruin your day.</description>
+<content:encoded><![CDATA[<p><img src="https://blog.patpadgett.com/assets/img/what-billing-mediation-is.jpg" alt="A kneeling person holds a dustpan beside scattered debris beneath a desk with reel-to-reel equipment."></p><p>You hear &quot;billing mediation[1]&quot; and probably picture me spending fourteen years looking at invoices. I understand, but there is a looooong way to go before an invoice exists, and I worked in the middle where a phone company either makes its money or quietly loses it.</p>
+<p>The switch doesn't give a damn about your rate plan. It records the A-number, B-number, start time, duration, cell site, trunk group, cause code, and a few dozen other fields in a proprietary binary structure.</p>
+<p>Billing needs somebody to translate that thing before it can rate it, which is where mediation comes in.</p>
+<p>Collection means pulling files from 130 switches over whatever they support: FTP[2], X.25[3] on the old ones, a vendor-specific push. It runs on a schedule, and you verify every file in the sequence and SCREAM when a number is missing. The call already happened! That gap is unbilled revenue until somebody gets its record.</p>
+<p>Then you parse the binary. Release 17 added a field and shifted everything after it by two bytes, and nobody told you. Two BYTES! Plenty of room to fuck up your afternoon.</p>
+<p>Reconciliation means counting what came in against what went out at <em>every</em> stage, then explaining every difference. You don't get to shrug at the leftovers.</p>
+<p>Over fourteen years I recovered tens of millions of dollars finding that shit. Mangled headers, truncated tails, sequence gaps, records rejected into an error queue nobody watched. It was hex dumps[4] and &quot;why did this file stop at byte 48,201?&quot; I am proud of that work, even if I mostly remember staring at hex dumps.</p>
+<p>And I still want to look in that fucking error queue.</p>
+<h2>References</h2>
+<ol>
+<li>billing mediation: https://en.wikipedia.org/wiki/Telecommunications_mediation</li>
+<li>FTP: https://www.rfc-editor.org/rfc/rfc959</li>
+<li>X.25: https://en.wikipedia.org/wiki/X.25</li>
+<li>hex dumps: https://en.wikipedia.org/wiki/Hex_dump</li>
+</ol>
+]]></content:encoded></item>
 <item><title>Twenty-five years of corkscrew. All 291 damned lines.</title><link>https://blog.patpadgett.com/posts/corkscrew-twenty-five-years/</link><guid>https://blog.patpadgett.com/posts/corkscrew-twenty-five-years/</guid>
 <pubDate>Mon, 21 Sep 2026 12:00:00 -0400</pubDate><description>I wrote 291 lines of C to get SSH through a corporate proxy in 2000. Linux distributions kept shipping it. Modern analysis has some things to tell me.</description>
 <content:encoded><![CDATA[<p><img src="https://blog.patpadgett.com/assets/img/corkscrew-twenty-five-years.jpg" alt="A person handles coiled sausages in a metal container beside a computer monitor and keyboard."></p><p>I wrote corkscrew[1] in an afternoon. A quarter century later I'm still discussing it, although I would have preferred to be discussing something other than its stack buffer overflow.</p>
