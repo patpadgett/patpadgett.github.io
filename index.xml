@@ -2,6 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
 <channel><title>Weekly Padgett</title><link>https://blog.patpadgett.com/</link><description>Stories from thirty years of telecom billing mediation, Unix, corkscrew, bass guitar, Indonesian music, and whatever else Pat Padgett could not shut up about.</description><language>en-us</language>
 <atom:link href="https://blog.patpadgett.com/index.xml" rel="self" type="application/rss+xml"/>
+<item><title>Never post twice. Yes, even when I run the damned thing twice.</title><link>https://blog.patpadgett.com/posts/never-post-twice/</link><guid>https://blog.patpadgett.com/posts/never-post-twice/</guid>
+<pubDate>Fri, 25 Sep 2026 12:00:00 -0400</pubDate><description>grime95.com posts daily fiction to a website, Facebook and Instagram. Posting was easy. Keeping a retry from posting the same damned thing again took some work.</description>
+<content:encoded><![CDATA[<p><img src="https://blog.patpadgett.com/assets/img/never-post-twice.jpg" alt="A person handles a white frosted cake inside a cardboard box beside another cake and metal trays."></p><p>You want a script that posts something once a day, forty lines should do it. Then you get to spend the next week figuring out what happens when those forty lines half-work.</p>
+<p>I run grime95.com[1], a serialized fiction site publishing one fictional small-town booking record every day at noon Eastern. Each goes to a static site (a GitHub Pages[2] repo), a Facebook Page, and Instagram. Cron[3] does it. Twenty percent of that script took eighty percent of the thought, most of it about what could go wrong.</p>
+<p>My billing mediation habit kicks in here, because I've spent a lot of time reconciling things and I want a ledger I can check. I used SQLite[4], one row per (entry, channel). Status: <code>pending | success | uncertain</code>.</p>
+<p>Three statuses, because sometimes I genuinely don't know what happened.</p>
+<p>When a POST to Meta's Graph API[5] throws, you don't know whether the post exists. Maybe it completed and the response disappeared. Maybe the token expired and nothing happened. Instagram takes two calls, create a container and publish it, so it can half-happen. A leftover container expires on its own, but isn't easily distinguished from one that published.</p>
+<p>POSTs get exactly ONE attempt. An exception marks the row <code>uncertain</code>, and the script stops touching that (entry, channel) pair. On the next run, GETs retry freely. Reading is idempotent, so I can keep looking without posting another copy.</p>
+<p>Every channel adapter gets a <code>checkpoint</code> callback. The instant it has a remote ID, it calls that callback.</p>
+<p>Verification can fail. The process can get killed. The ledger already knows a post with that ID exists, so the next run sees <code>remote_id</code> and doesn't repost. Instagram checkpoints even the container ID as <code>container:&lt;id&gt;</code> before publishing. Half-done counts as something I want written down!!</p>
+<p>About 480 lines of Python. Standard library plus Pillow[6] for image checks. I wrote it in an afternoon and I'm proud of the thing. Getting the failure states right took the week after.</p>
+<p>I don't want to babysit it every day at noon.</p>
+<h2>References</h2>
+<ol>
+<li>grime95.com: https://grime95.com/</li>
+<li>GitHub Pages: https://pages.github.com/</li>
+<li>Cron: https://en.wikipedia.org/wiki/Cron</li>
+<li>SQLite: https://www.sqlite.org/</li>
+<li>Meta's Graph API: https://developers.facebook.com/docs/graph-api/</li>
+<li>Pillow: https://pillow.readthedocs.io/en/stable/</li>
+</ol>
+]]></content:encoded></item>
 <item><title>Billing mediation: somebody has to find the damned money</title><link>https://blog.patpadgett.com/posts/what-billing-mediation-is/</link><guid>https://blog.patpadgett.com/posts/what-billing-mediation-is/</guid>
 <pubDate>Wed, 23 Sep 2026 12:00:00 -0400</pubDate><description>Fourteen years between the switch and the bill, finding missing money in binary records. What telecom mediation does, and why two bytes can ruin your day.</description>
 <content:encoded><![CDATA[<p><img src="https://blog.patpadgett.com/assets/img/what-billing-mediation-is.jpg" alt="A kneeling person holds a dustpan beside scattered debris beneath a desk with reel-to-reel equipment."></p><p>You hear &quot;billing mediation[1]&quot; and probably picture me spending fourteen years looking at invoices. I understand, but there is a looooong way to go before an invoice exists, and I worked in the middle where a phone company either makes its money or quietly loses it.</p>
